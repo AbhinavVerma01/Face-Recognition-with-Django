@@ -18,10 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from face.views import *
 
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('register/', register_page), 
-    path('login/', login_user),
+    path('register/', register_page, name='register'),
+    path('login/', login_user,name='login'),
+
     
     
 ]

@@ -92,6 +92,11 @@
                 background: rgb(29, 91, 102);
                 color: #fff;
             }
+            a {
+                text-decoration: none; /* Removes underline */
+                color: inherit; /* Uses the parent element's text color */
+            }
+            
             #message {
                 margin-top: 15px;
                 font-size: 18px;
@@ -119,6 +124,8 @@
             </div>
 
             <button type="submit">Register</button>
+            <button><a href="{% url 'login' %}" class="btn login">Login</a></button>
+            
         </form>
         <div id="message"></div>
     </div>

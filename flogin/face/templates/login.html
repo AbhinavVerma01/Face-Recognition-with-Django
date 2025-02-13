@@ -95,6 +95,10 @@
             font-weight: bold;
             color: rgb(40, 2, 2);
         }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
         
     @media (max-width: 480px) {
         .login-container {
@@ -116,7 +120,9 @@
             <canvas id="canvas" width="300" height="200"></canvas>
         </div>
 
+        <button><a href="{% url 'register' %}" class="btn register">Register</a></button>
         <button type="submit">Login</button>
+
     </form>
     <div id="message"></div>
 </div>
