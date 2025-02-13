@@ -43,7 +43,7 @@ def login_user(request):
         try:
             user = User.objects.get(username=username)
         except User.DoesNotExist:
-            return JsonResponse({'status': 'error', 'message': 'User not found.'})
+            return JsonResponse({'status': 'error', 'message': 'Registration To kar le yrrr.'})
 
         # Convert base64 image data to a file
         face_image_data = face_image_data.split(",")[1]
@@ -75,5 +75,4 @@ def login_user(request):
     return render(request, 'login.html')
 
 
-def home_page(request):
-    return render(request, 'home.html')
+
